@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.play.PlayFragment">
+
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:footerDividersEnabled="false"
+        android:padding="1dp"
+        android:numColumns="3" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/dash_line"
+        android:layerType="software" />
+    <GridView
+        android:id="@+id/resultGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:footerDividersEnabled="false"
+        android:padding="1dp"
+        android:numColumns="3" />
+
+
+
+</LinearLayout>

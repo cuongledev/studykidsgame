@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_welcome"
+        tools:context=".ui.home.HomeFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Hello Tom!"
+            android:textSize="96px"
+            android:textColor="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Cùng nhau học nào!"
+            android:textSize="32px"
+            android:textColor="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginBottom="35dp"/>
+
+        <LinearLayout
+            android:id="@+id/practice_item"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_item"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            >
+
+            <ImageView
+                android:src="@drawable/fat_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Luyện tập"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Vào luyện ngay"
+                    android:textSize="14sp"
+                    android:textColor="#bebebe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/competition_item"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_item"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            >
+
+            <ImageView
+                android:src="@drawable/maintenance_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Thi đấu"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Cùng nhau thi đấu"
+                    android:textSize="14sp"
+                    android:textColor="#bebebe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lesson_item"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_item"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            >
+
+            <ImageView
+                android:src="@drawable/muscle_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Bài giảng"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Vào học tập"
+                    android:textSize="14sp"
+                    android:textColor="#bebebe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_continue" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_cancel" />
+
+
+    </LinearLayout>
