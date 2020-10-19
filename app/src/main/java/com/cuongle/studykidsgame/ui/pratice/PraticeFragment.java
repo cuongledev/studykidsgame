@@ -19,6 +19,7 @@ import com.cuongle.studykidsgame.R;
 import com.cuongle.studykidsgame.ui.play.PlayFragment;
 import com.cuongle.studykidsgame.ui.slideshow.SlideshowFragment;
 import com.cuongle.studykidsgame.ui.start.StartFragment;
+import com.cuongle.studykidsgame.ui.subjects.SubjectsFragment;
 
 import static maes.tech.intentanim.CustomIntent.customType;
 
@@ -94,7 +95,7 @@ public class PraticeFragment extends Fragment implements View.OnClickListener {
 
     public void rightToLeft(){
         FragmentManager fragmentManager = getParentFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new StartFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new SubjectsFragment()).commit();
         customType(getContext(),"right-to-left");
     }
 }
