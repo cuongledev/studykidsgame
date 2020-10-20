@@ -2,8 +2,10 @@ package com.cuongle.studykidsgame;
 
 import android.os.Bundle;
 
+import com.cuongle.studykidsgame.ui.competition.CompetitionFragment;
 import com.cuongle.studykidsgame.ui.congratulations.CongrationsFragment;
 import com.cuongle.studykidsgame.ui.pratice.PraticeFragment;
+import com.cuongle.studykidsgame.ui.videos.VideosFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -75,8 +77,8 @@ public class MainActivity extends AppCompatActivity{
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
+                R.id.nav_home, R.id.nav_pratice, R.id.nav_competition,
+                R.id.nav_lesson, R.id.nav_share, R.id.nav_send)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -90,7 +92,13 @@ public class MainActivity extends AppCompatActivity{
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
 
+
+
+
+
+
                 removeActiveCenterFragments();
+
 
                 /*FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction trans = manager.beginTransaction();
@@ -105,7 +113,7 @@ public class MainActivity extends AppCompatActivity{
                     toolbar.setVisibility(View.VISIBLE);
                     bottomNavigationView.setVisibility(View.VISIBLE);
                 }*/
-                //Toast.makeText(getApplicationContext(),"AAAA: ",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"AAAA: " + controller,Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -136,5 +144,6 @@ public class MainActivity extends AppCompatActivity{
             fragmentTransaction.commit();
         }
     }
+
 
 }

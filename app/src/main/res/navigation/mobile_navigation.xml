@@ -12,21 +12,21 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.cuongle.studykidsgame.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_pratice"
+        android:name="com.cuongle.studykidsgame.ui.pratice.PraticeFragment"
+        android:label="@string/menu_pratice"
+        tools:layout="@layout/fragment_pratice" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.cuongle.studykidsgame.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_competition"
+        android:name="com.cuongle.studykidsgame.ui.competition.CompetitionFragment"
+        android:label="@string/menu_competition"
+        tools:layout="@layout/fragment_competition" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.cuongle.studykidsgame.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:id="@+id/nav_lesson"
+        android:name="com.cuongle.studykidsgame.ui.lesson.LessonFragment"
+        android:label="@string/menu_lesson"
         tools:layout="@layout/fragment_tools" />
 
     <fragment

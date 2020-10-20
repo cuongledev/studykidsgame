@@ -19,7 +19,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.cuongle.studykidsgame.R;
+import com.cuongle.studykidsgame.ui.competition.CompetitionFragment;
 import com.cuongle.studykidsgame.ui.gallery.GalleryFragment;
+import com.cuongle.studykidsgame.ui.lesson.LessonFragment;
 import com.cuongle.studykidsgame.ui.pratice.PraticeFragment;
 
 import static androidx.core.content.ContextCompat.getDrawable;
@@ -118,10 +120,10 @@ public class HomeFragment extends Fragment {
                         slideUp();
                         break;
                     case 2:
-                        slideUp();
+                        slideUpBottom();
                         break;
                     case 3:
-                        slideUp();
+                        leftToRight();
                         break;
                     default:
                         break;
@@ -137,5 +139,17 @@ public class HomeFragment extends Fragment {
         FragmentManager fragmentManager = getParentFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new PraticeFragment()).commit();
         customType(getContext(),"bottom-to-up");
+    }
+
+    public void slideUpBottom(){
+        FragmentManager fragmentManager = getParentFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new CompetitionFragment()).commit();
+        customType(getContext(),"up-to-bottom");
+    }
+
+    public void leftToRight(){
+        FragmentManager fragmentManager = getParentFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new LessonFragment()).commit();
+        customType(getContext(),"left-to-right");
     }
 }

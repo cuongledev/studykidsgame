@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_welcome"
+    tools:context=".ui.competition.CompetitionFragment">
+
+    <LinearLayout
+        android:id="@+id/practice_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_pink"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="12dp"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_baseline_apart"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Đối kháng"
+                android:textSize="18sp"
+                android:textColor="#E91E63"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Cùng nhau thi đấu"
+                android:textSize="14sp"
+                android:textColor="#bebebe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/competition_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_green"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="12dp"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_baseline_circle"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tạo phòng đấu"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Tạo phòng đấu chuyên nghiệp"
+                android:textSize="14sp"
+                android:textColor="#bebebe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -15,13 +15,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.cuongle.studykidsgame.R;
+import com.cuongle.studykidsgame.ui.home.HomeFragment;
 import com.cuongle.studykidsgame.ui.play.PlayFragment;
+import com.cuongle.studykidsgame.ui.subjects.SubjectsFragment;
 
 import static maes.tech.intentanim.CustomIntent.customType;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
 
-    private ImageView btnPlay;
+    private ImageView btnPlay,btnQuit;
 
     private StartViewModel mViewModel;
 
@@ -35,8 +37,10 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         View root =  inflater.inflate(R.layout.fragment_start, container, false);
 
         btnPlay = root.findViewById(R.id.btn_play);
+        btnQuit = root.findViewById(R.id.btn_quit);
 
         btnPlay.setOnClickListener(this);
+        btnQuit.setOnClickListener(this);
 
         return root;
     }
@@ -54,6 +58,9 @@ public class StartFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_play:
                 rightToLeft();
                 break;
+            case R.id.btn_quit:
+                bottomToUp();
+                break;
             default:
                 break;
         }
@@ -63,5 +70,11 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         FragmentManager fragmentManager = getParentFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new PlayFragment()).commit();
         customType(getContext(),"right-to-left");
+    }
+
+    public void bottomToUp(){
+        FragmentManager fragmentManager = getParentFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new SubjectsFragment()).commit();
+        customType(getContext(),"bottom-to-up");
     }
 }

@@ -17,11 +17,12 @@ import android.widget.TextView;
 
 import com.cuongle.studykidsgame.R;
 import com.cuongle.studykidsgame.ui.play.PlayFragment;
+import com.cuongle.studykidsgame.ui.subjects.SubjectsFragment;
 
 import static maes.tech.intentanim.CustomIntent.customType;
 
 public class CongrationsFragment extends Fragment {
-    ImageView btn_play_again;
+    ImageView btn_play_again,btn_play_continue;
 
     TextView text_true,text_false;
 
@@ -49,11 +50,21 @@ public class CongrationsFragment extends Fragment {
         text_false.setText("Số câu sai: " + result_false);
 
         btn_play_again = root.findViewById(R.id.btn_play_again);
+        btn_play_continue = root.findViewById(R.id.btn_play_continue);
         btn_play_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new PlayFragment()).commit();
+                customType(getContext(),"right-to-left");
+            }
+        });
+
+        btn_play_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new SubjectsFragment()).commit();
                 customType(getContext(),"right-to-left");
             }
         });
