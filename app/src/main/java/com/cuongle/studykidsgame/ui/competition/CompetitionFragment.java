@@ -1,5 +1,7 @@
 package com.cuongle.studykidsgame.ui.competition;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -25,7 +27,13 @@ public class CompetitionFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_competition, container, false);
+        View root = inflater.inflate(R.layout.fragment_competition, container, false);
+
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("Thi đấu");
+
+        return root;
+
     }
 
     @Override

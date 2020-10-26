@@ -1,5 +1,7 @@
 package com.cuongle.studykidsgame.ui.pratice;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
@@ -39,6 +41,8 @@ public class PraticeFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View root =  inflater.inflate(R.layout.fragment_pratice, container, false);
+
+
 
 
         cv_one = root.findViewById(R.id.cv_one);

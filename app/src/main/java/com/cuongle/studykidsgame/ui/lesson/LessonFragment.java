@@ -1,5 +1,7 @@
 package com.cuongle.studykidsgame.ui.lesson;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
@@ -35,6 +37,9 @@ public class LessonFragment extends Fragment implements View.OnClickListener {
                              @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_lesson, container, false);
 
+
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("Bài giảng");
 
         vid_cv_one = root.findViewById(R.id.vid_cv_one);
         vid_cv_two = root.findViewById(R.id.vid_cv_two);

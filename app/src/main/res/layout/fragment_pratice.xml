@@ -24,7 +24,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:text="Luyện tập"
             android:textSize="34sp"
-            android:textColor="#3498db"/>
+            android:textColor="@color/colorPrimary"/>
 
         <TextView
             android:id="@+id/textViewDescription"

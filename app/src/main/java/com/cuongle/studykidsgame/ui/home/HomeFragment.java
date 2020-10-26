@@ -31,7 +31,7 @@ public class HomeFragment extends Fragment {
 
 
     LinearLayout practice_item,competition_item,lesson_item;
-    Button btn_continue, btn_cancel;
+    //Button btn_continue, btn_cancel;
     private int state = 0;
 
     Animation fade;
@@ -55,22 +55,23 @@ public class HomeFragment extends Fragment {
         practice_item = root.findViewById(R.id.practice_item);
         competition_item = root.findViewById(R.id.competition_item);
         lesson_item = root.findViewById(R.id.lesson_item);
-        btn_continue = root.findViewById(R.id.btn_continue);
-        btn_cancel = root.findViewById(R.id.btn_cancel);
+        //btn_continue = root.findViewById(R.id.btn_continue);
+        //btn_cancel = root.findViewById(R.id.btn_cancel);
 
         fade = AnimationUtils.loadAnimation(getContext(),R.anim.fade);
-        btn_continue.setAlpha(0);
-        btn_cancel.setAlpha(0);
+        //btn_continue.setAlpha(0);
+        //btn_cancel.setAlpha(0);
         practice_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 state = 1;
                 practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
-                competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                btn_continue.setAlpha(1);
-                btn_cancel.setAlpha(1);
-                btn_continue.startAnimation(fade);
+                competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_2));
+                lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_3));
+                slideUp();
+                //btn_continue.setAlpha(1);
+                //btn_cancel.setAlpha(1);
+                //btn_continue.startAnimation(fade);
             }
         });
         competition_item.setOnClickListener(new View.OnClickListener() {
@@ -78,11 +79,12 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 state = 2;
                 competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
-                practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                btn_continue.setAlpha(1);
-                btn_cancel.setAlpha(1);
-                btn_continue.startAnimation(fade);
+                practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_1));
+                lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_3));
+                slideUpBottom();
+                //btn_continue.setAlpha(1);
+                //btn_cancel.setAlpha(1);
+                //btn_continue.startAnimation(fade);
             }
         });
         lesson_item.setOnClickListener(new View.OnClickListener() {
@@ -90,28 +92,29 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 state = 3;
                 lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
-                practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                btn_continue.setAlpha(1);
-                btn_cancel.setAlpha(1);
-                btn_continue.startAnimation(fade);
+                practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_1));
+                competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected_2));
+                leftToRight();
+                //btn_continue.setAlpha(1);
+                //btn_cancel.setAlpha(1);
+                //btn_continue.startAnimation(fade);
             }
         });
 
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
+        /*btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 state = 0;
                 practice_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
                 competition_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
                 lesson_item.setBackground(getDrawable(getContext(),R.drawable.bg_item));
-                btn_continue.setAlpha(0);
-                btn_cancel.setAlpha(0);
+                //btn_continue.setAlpha(0);
+                //btn_cancel.setAlpha(0);
             }
-        });
+        });*/
 
 
-        btn_continue.setOnClickListener(new View.OnClickListener() {
+        /*btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i("STATE" , "STATE: " + state);
@@ -131,7 +134,7 @@ public class HomeFragment extends Fragment {
 
             }
         });
-
+*/
         return root;
     }
 
