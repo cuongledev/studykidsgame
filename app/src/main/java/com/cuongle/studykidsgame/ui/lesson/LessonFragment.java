@@ -22,9 +22,9 @@ import com.cuongle.studykidsgame.ui.videos.VideosFragment;
 
 import static maes.tech.intentanim.CustomIntent.customType;
 
-public class LessonFragment extends Fragment implements View.OnClickListener {
+public class LessonFragment extends Fragment {
 
-    CardView vid_cv_one,vid_cv_two,vid_cv_three,vid_cv_four,vid_cv_five,vid_cv_six;
+    //CardView vid_cv_one,vid_cv_two,vid_cv_three,vid_cv_four,vid_cv_five,vid_cv_six;
 
     private LessonViewModel mViewModel;
 
@@ -41,7 +41,7 @@ public class LessonFragment extends Fragment implements View.OnClickListener {
         ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         actionBar.setTitle("Bài giảng");
 
-        vid_cv_one = root.findViewById(R.id.vid_cv_one);
+        /*vid_cv_one = root.findViewById(R.id.vid_cv_one);
         vid_cv_two = root.findViewById(R.id.vid_cv_two);
         vid_cv_three = root.findViewById(R.id.vid_cv_three);
         vid_cv_four = root.findViewById(R.id.vid_cv_four);
@@ -53,7 +53,7 @@ public class LessonFragment extends Fragment implements View.OnClickListener {
         vid_cv_three.setOnClickListener(this);
         vid_cv_four.setOnClickListener(this);
         vid_cv_five.setOnClickListener(this);
-        vid_cv_six.setOnClickListener(this);
+        vid_cv_six.setOnClickListener(this);*/
 
 
         return root;
@@ -65,7 +65,7 @@ public class LessonFragment extends Fragment implements View.OnClickListener {
         mViewModel = new ViewModelProvider(this).get(LessonViewModel.class);
         // TODO: Use the ViewModel
     }
-
+/*
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -97,4 +97,6 @@ public class LessonFragment extends Fragment implements View.OnClickListener {
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new VideosFragment()).commit();
         customType(getContext(),"right-to-left");
     }
+    */
+
 }

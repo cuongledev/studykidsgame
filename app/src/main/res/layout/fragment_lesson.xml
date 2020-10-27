@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_welcome"
+    android:background="#ffffff"
     android:weightSum="10"
     tools:context=".ui.lesson.LessonFragment">
 
     <RelativeLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_decuong"
+        android:layout_marginBottom="20dp"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:background="@drawable/bg_decuong">
+        android:paddingRight="30dp">
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -23,8 +28,8 @@
             android:layout_centerInParent="true"
             android:fontFamily="@font/montserrat_bold"
             android:text="Bài giảng"
-            android:textSize="34sp"
-            android:textColor="#3498db"/>
+            android:textColor="#3498db"
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/textViewDescription"
@@ -33,15 +38,383 @@
             android:layout_alignParentBottom="true"
             android:paddingBottom="30dp"
             android:text="Học trực tuyến với các video bài giảng."
-            android:textSize="14sp"
             android:textAlignment="center"
-            android:textColor="#34495e"/>
+            android:textColor="#34495e"
+            android:textSize="14sp" />
 
 
     </RelativeLayout>
 
 
-    <GridLayout
+
+    <LinearLayout
+        android:id="@+id/tv_cd_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Cánh diều"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_nl_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Năng lực"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_bd_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Bình đẳng"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_ct_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Chân trời"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_kn_item"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_kn_item1"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_kn_item2"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_kn_item3"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <!--<GridLayout
         android:id="@+id/praticeView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -50,8 +423,8 @@
         android:columnCount="2"
         android:columnOrderPreserved="false">
 
-        <!-- Row1-->
-        <!-- Column1-->
+        &lt;!&ndash; Row1&ndash;&gt;
+        &lt;!&ndash; Column1&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_one"
             android:layout_width="0dp"
@@ -88,13 +461,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Row2-->
-        <!-- Column2-->
+        &lt;!&ndash; Row2&ndash;&gt;
+        &lt;!&ndash; Column2&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_two"
             android:layout_width="0dp"
@@ -131,11 +504,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!-- Row3-->
-        <!-- Column3-->
+        &lt;!&ndash; Row3&ndash;&gt;
+        &lt;!&ndash; Column3&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_three"
             android:layout_width="0dp"
@@ -172,11 +545,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column3-->
-        <!-- End  Row3-->
+        &lt;!&ndash; End Column3&ndash;&gt;
+        &lt;!&ndash; End  Row3&ndash;&gt;
 
-        <!-- Row4-->
-        <!-- Column4-->
+        &lt;!&ndash; Row4&ndash;&gt;
+        &lt;!&ndash; Column4&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_four"
             android:layout_width="0dp"
@@ -213,11 +586,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column4-->
-        <!-- End  Row4-->
+        &lt;!&ndash; End Column4&ndash;&gt;
+        &lt;!&ndash; End  Row4&ndash;&gt;
 
-        <!-- Row5-->
-        <!-- Column5-->
+        &lt;!&ndash; Row5&ndash;&gt;
+        &lt;!&ndash; Column5&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_five"
             android:layout_width="0dp"
@@ -254,11 +627,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column5-->
-        <!-- End  Row5-->
+        &lt;!&ndash; End Column5&ndash;&gt;
+        &lt;!&ndash; End  Row5&ndash;&gt;
 
-        <!-- Row6-->
-        <!-- Column6-->
+        &lt;!&ndash; Row6&ndash;&gt;
+        &lt;!&ndash; Column6&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/vid_cv_six"
             android:layout_width="0dp"
@@ -295,10 +668,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column6-->
-        <!-- End  Row6-->
+        &lt;!&ndash; End Column6&ndash;&gt;
+        &lt;!&ndash; End  Row6&ndash;&gt;
 
 
-    </GridLayout>
+    </GridLayout>-->
 
 </LinearLayout>
+</ScrollView>
