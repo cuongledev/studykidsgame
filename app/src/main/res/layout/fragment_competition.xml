@@ -9,11 +9,11 @@
     tools:context=".ui.competition.CompetitionFragment">
 
     <LinearLayout
-        android:id="@+id/practice_item"
+        android:id="@+id/one_item"
         android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:background="@drawable/bg_item_pink"
+        android:background="@drawable/bg_item_selected_1"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_height="80dp"
@@ -52,11 +52,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/competition_item"
+        android:id="@+id/group_item"
         android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:background="@drawable/bg_item_green"
+        android:background="@drawable/bg_item_selected_6"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_height="80dp"

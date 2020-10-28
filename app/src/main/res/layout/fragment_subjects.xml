@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="120dp"
         android:background="@drawable/background_math"
         android:orientation="vertical"
         android:gravity="clip_vertical"
@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="Toán"
             android:textColor="#30336b"
             android:textSize="36sp"
@@ -39,24 +39,15 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trải nghiệm cùng"
-                android:textColor="#30336b"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-
-    </LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
-    <GridLayout
+    <!--<GridLayout
         android:id="@+id/praticeView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,8 +58,8 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp">
 
-        <!-- Row1-->
-        <!-- Column1-->
+        &lt;!&ndash; Row1&ndash;&gt;
+        &lt;!&ndash; Column1&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_one"
             android:layout_width="0dp"
@@ -104,13 +95,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Row2-->
-        <!-- Column2-->
+        &lt;!&ndash; Row2&ndash;&gt;
+        &lt;!&ndash; Column2&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_two"
             android:layout_width="0dp"
@@ -146,11 +137,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!-- Row3-->
-        <!-- Column3-->
+        &lt;!&ndash; Row3&ndash;&gt;
+        &lt;!&ndash; Column3&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_three"
             android:layout_width="0dp"
@@ -189,8 +180,8 @@
 
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column3-->
-        <!-- End  Row3-->
+        &lt;!&ndash; End Column3&ndash;&gt;
+        &lt;!&ndash; End  Row3&ndash;&gt;
 
 
     </GridLayout>
@@ -221,8 +212,8 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp">
 
-        <!-- Row1-->
-        <!-- Column1-->
+        &lt;!&ndash; Row1&ndash;&gt;
+        &lt;!&ndash; Column1&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -257,13 +248,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Row2-->
-        <!-- Column2-->
+        &lt;!&ndash; Row2&ndash;&gt;
+        &lt;!&ndash; Column2&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -298,11 +289,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!-- Row3-->
-        <!-- Column3-->
+        &lt;!&ndash; Row3&ndash;&gt;
+        &lt;!&ndash; Column3&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -337,8 +328,8 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column3-->
-        <!-- End  Row3-->
+        &lt;!&ndash; End Column3&ndash;&gt;
+        &lt;!&ndash; End  Row3&ndash;&gt;
 
 
     </GridLayout>
@@ -369,8 +360,8 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp">
 
-        <!-- Row1-->
-        <!-- Column1-->
+        &lt;!&ndash; Row1&ndash;&gt;
+        &lt;!&ndash; Column1&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -405,13 +396,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Row2-->
-        <!-- Column2-->
+        &lt;!&ndash; Row2&ndash;&gt;
+        &lt;!&ndash; Column2&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -446,11 +437,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!-- Row3-->
-        <!-- Column3-->
+        &lt;!&ndash; Row3&ndash;&gt;
+        &lt;!&ndash; Column3&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -485,11 +476,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column3-->
-        <!-- End  Row3-->
+        &lt;!&ndash; End Column3&ndash;&gt;
+        &lt;!&ndash; End  Row3&ndash;&gt;
 
 
-    </GridLayout>
+    </GridLayout>-->
 
 
 

@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_welcome"
+    android:background="#ffffff"
     android:weightSum="10"
     tools:context=".ui.pratice.PraticeFragment">
 
     <RelativeLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="130dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:background="@drawable/bg_decuong">
+        android:background="@drawable/bg_decuong"
+        android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -31,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:paddingBottom="30dp"
+            android:paddingBottom="10dp"
             android:text="Học trực tuyến với các trò chơi, video bài giảng, câu hỏi trắc nghiệm, và các bài tập thực hành"
             android:textSize="14sp"
             android:textAlignment="center"
@@ -41,7 +46,420 @@
     </RelativeLayout>
 
 
-    <GridLayout
+    <LinearLayout
+        android:id="@+id/cv_one"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_1"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#dc6456"
+                android:src="@drawable/ic_baseline_wb_auto_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Cánh diều"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_two"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_2"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#47a8d3"
+                android:src="@drawable/ic_baseline_library_books_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Năng lực"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_three"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_3"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#6877f4"
+                android:src="@drawable/ic_baseline_menu_book_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Bình đẳng"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_four"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_4"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#f9ca24"
+                android:src="@drawable/ic_baseline_map_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Chân trời"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_five"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_5"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#eb4d4b"
+                android:src="@drawable/ic_baseline_mail_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_six"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_6"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#6ab04c"
+                android:src="@drawable/ic_baseline_local_pharmacy_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_seven"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_7"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#22a6b3"
+                android:src="@drawable/ic_baseline_local_cafe_24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_eight"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item_selected_8"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:background="#ee5253"
+                android:src="@drawable/ic_baseline_star"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Tiếng Việt - Kết nối"
+                android:textSize="16sp"
+                android:textColor="#4a4a4a"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<GridLayout
         android:id="@+id/praticeView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -50,8 +468,8 @@
         android:columnCount="2"
         android:columnOrderPreserved="false">
 
-        <!-- Row1-->
-        <!-- Column1-->
+        &lt;!&ndash; Row1&ndash;&gt;
+        &lt;!&ndash; Column1&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_one"
             android:layout_width="0dp"
@@ -88,13 +506,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Row2-->
-        <!-- Column2-->
+        &lt;!&ndash; Row2&ndash;&gt;
+        &lt;!&ndash; Column2&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_two"
             android:layout_width="0dp"
@@ -131,11 +549,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column1-->
-        <!-- End  Row1-->
+        &lt;!&ndash; End Column1&ndash;&gt;
+        &lt;!&ndash; End  Row1&ndash;&gt;
 
-        <!-- Row3-->
-        <!-- Column3-->
+        &lt;!&ndash; Row3&ndash;&gt;
+        &lt;!&ndash; Column3&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_three"
             android:layout_width="0dp"
@@ -172,11 +590,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column3-->
-        <!-- End  Row3-->
+        &lt;!&ndash; End Column3&ndash;&gt;
+        &lt;!&ndash; End  Row3&ndash;&gt;
 
-        <!-- Row4-->
-        <!-- Column4-->
+        &lt;!&ndash; Row4&ndash;&gt;
+        &lt;!&ndash; Column4&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_four"
             android:layout_width="0dp"
@@ -213,11 +631,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column4-->
-        <!-- End  Row4-->
+        &lt;!&ndash; End Column4&ndash;&gt;
+        &lt;!&ndash; End  Row4&ndash;&gt;
 
-        <!-- Row5-->
-        <!-- Column5-->
+        &lt;!&ndash; Row5&ndash;&gt;
+        &lt;!&ndash; Column5&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_five"
             android:layout_width="0dp"
@@ -254,11 +672,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column5-->
-        <!-- End  Row5-->
+        &lt;!&ndash; End Column5&ndash;&gt;
+        &lt;!&ndash; End  Row5&ndash;&gt;
 
-        <!-- Row6-->
-        <!-- Column6-->
+        &lt;!&ndash; Row6&ndash;&gt;
+        &lt;!&ndash; Column6&ndash;&gt;
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_six"
             android:layout_width="0dp"
@@ -295,10 +713,11 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <!-- End Column6-->
-        <!-- End  Row6-->
+        &lt;!&ndash; End Column6&ndash;&gt;
+        &lt;!&ndash; End  Row6&ndash;&gt;
 
 
-    </GridLayout>
+    </GridLayout>-->
 
 </LinearLayout>
+</ScrollView>

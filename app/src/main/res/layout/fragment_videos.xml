@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Toán"
+            android:text="Tiếng việt"
             android:textColor="#30336b"
             android:textSize="36sp"
             android:textStyle="bold"
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Các số vị trí quanh ta"
+            android:text="Tập đánh vần"
             android:textColor="#30336b"
             android:textSize="16sp"
             android:gravity="center"/>

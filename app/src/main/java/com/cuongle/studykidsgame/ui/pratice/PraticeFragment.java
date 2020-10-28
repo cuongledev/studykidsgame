@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.widget.LinearLayout;
 
 import com.cuongle.studykidsgame.R;
 import com.cuongle.studykidsgame.ui.play.PlayFragment;
@@ -23,11 +24,12 @@ import com.cuongle.studykidsgame.ui.slideshow.SlideshowFragment;
 import com.cuongle.studykidsgame.ui.start.StartFragment;
 import com.cuongle.studykidsgame.ui.subjects.SubjectsFragment;
 
+import static androidx.core.content.ContextCompat.getDrawable;
 import static maes.tech.intentanim.CustomIntent.customType;
 
 public class PraticeFragment extends Fragment implements View.OnClickListener {
 
-    CardView cv_one,cv_two,cv_three,cv_four,cv_five,cv_six;
+    LinearLayout cv_one,cv_two,cv_three,cv_four,cv_five,cv_six,cv_seven,cv_eight;
     private int state = 0;
     Animation fade;
 
@@ -51,6 +53,8 @@ public class PraticeFragment extends Fragment implements View.OnClickListener {
         cv_four = root.findViewById(R.id.cv_four);
         cv_five = root.findViewById(R.id.cv_five);
         cv_six = root.findViewById(R.id.cv_six);
+        cv_seven = root.findViewById(R.id.cv_seven);
+        cv_eight = root.findViewById(R.id.cv_eight);
 
         cv_one.setOnClickListener(this);
         cv_two.setOnClickListener(this);
@@ -58,6 +62,8 @@ public class PraticeFragment extends Fragment implements View.OnClickListener {
         cv_four.setOnClickListener(this);
         cv_five.setOnClickListener(this);
         cv_six.setOnClickListener(this);
+        cv_seven.setOnClickListener(this);
+        cv_eight.setOnClickListener(this);
 
 
         return root;
@@ -75,21 +81,35 @@ public class PraticeFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.cv_one:
+                cv_one.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             case R.id.cv_two:
+                cv_two.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             case R.id.cv_three:
+                cv_three.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             case R.id.cv_four:
+                cv_four.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             case R.id.cv_five:
+                cv_five.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             case R.id.cv_six:
+                cv_six.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
+                rightToLeft();
+                break;
+            case R.id.cv_seven:
+                cv_seven.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
+                rightToLeft();
+                break;
+            case R.id.cv_eight:
+                cv_eight.setBackground(getDrawable(getContext(),R.drawable.bg_item_selected));
                 rightToLeft();
                 break;
             default:

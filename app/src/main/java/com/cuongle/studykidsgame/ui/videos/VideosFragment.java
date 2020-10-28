@@ -66,7 +66,7 @@ public class VideosFragment extends Fragment {
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setSaveFormData(true);
 
-        String playVideo= "<html><body><iframe class=\"youtube-player\" type=\"text/html\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/a4jmffKYu94\" frameborder=\"0\"></body></html>";
+        String playVideo= "<html><body><iframe class=\"youtube-player\" type=\"text/html\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/we75Yl-J4n0\" frameborder=\"0\"></body></html>";
         webView.loadData(playVideo, "text/html", "utf-8");
     }
 

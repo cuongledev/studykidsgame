@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.cuongle.studykidsgame.R;
 import com.cuongle.studykidsgame.ui.subjects.SubjectsFragment;
@@ -22,9 +23,9 @@ import com.cuongle.studykidsgame.ui.videos.VideosFragment;
 
 import static maes.tech.intentanim.CustomIntent.customType;
 
-public class LessonFragment extends Fragment {
+public class LessonFragment extends Fragment implements View.OnClickListener {
 
-    //CardView vid_cv_one,vid_cv_two,vid_cv_three,vid_cv_four,vid_cv_five,vid_cv_six;
+    LinearLayout tv_cd_item,tv_nl_item,tv_bd_item,tv_ct_item,tv_kn_item,tv_kn_item1,tv_kn_item2,tv_kn_item3;
 
     private LessonViewModel mViewModel;
 
@@ -41,19 +42,23 @@ public class LessonFragment extends Fragment {
         ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         actionBar.setTitle("Bài giảng");
 
-        /*vid_cv_one = root.findViewById(R.id.vid_cv_one);
-        vid_cv_two = root.findViewById(R.id.vid_cv_two);
-        vid_cv_three = root.findViewById(R.id.vid_cv_three);
-        vid_cv_four = root.findViewById(R.id.vid_cv_four);
-        vid_cv_five = root.findViewById(R.id.vid_cv_five);
-        vid_cv_six = root.findViewById(R.id.vid_cv_six);
+        tv_cd_item = root.findViewById(R.id.tv_cd_item);
+        tv_nl_item = root.findViewById(R.id.tv_nl_item);
+        tv_bd_item = root.findViewById(R.id.tv_bd_item);
+        tv_ct_item = root.findViewById(R.id.tv_ct_item);
+        tv_kn_item = root.findViewById(R.id.tv_kn_item);
+        tv_kn_item1 = root.findViewById(R.id.tv_kn_item1);
+        tv_kn_item2 = root.findViewById(R.id.tv_kn_item2);
+        tv_kn_item3 = root.findViewById(R.id.tv_kn_item3);
 
-        vid_cv_one.setOnClickListener(this);
-        vid_cv_two.setOnClickListener(this);
-        vid_cv_three.setOnClickListener(this);
-        vid_cv_four.setOnClickListener(this);
-        vid_cv_five.setOnClickListener(this);
-        vid_cv_six.setOnClickListener(this);*/
+        tv_cd_item.setOnClickListener(this);
+        tv_nl_item.setOnClickListener(this);
+        tv_bd_item.setOnClickListener(this);
+        tv_ct_item.setOnClickListener(this);
+        tv_kn_item.setOnClickListener(this);
+        tv_kn_item1.setOnClickListener(this);
+        tv_kn_item2.setOnClickListener(this);
+        tv_kn_item3.setOnClickListener(this);
 
 
         return root;
@@ -65,29 +70,18 @@ public class LessonFragment extends Fragment {
         mViewModel = new ViewModelProvider(this).get(LessonViewModel.class);
         // TODO: Use the ViewModel
     }
-/*
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.vid_cv_one:
+            case R.id.tv_cd_item:
                 rightToLeft();
                 break;
-            case R.id.vid_cv_two:
-                rightToLeft();
-                break;
-            case R.id.vid_cv_three:
-                rightToLeft();
-                break;
-            case R.id.vid_cv_four:
-                rightToLeft();
-                break;
-            case R.id.vid_cv_five:
-                rightToLeft();
-                break;
-            case R.id.vid_cv_six:
+            case R.id.tv_nl_item:
                 rightToLeft();
                 break;
             default:
+                rightToLeft();
                 break;
         }
     }
@@ -97,6 +91,6 @@ public class LessonFragment extends Fragment {
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment,new VideosFragment()).commit();
         customType(getContext(),"right-to-left");
     }
-    */
+
 
 }
