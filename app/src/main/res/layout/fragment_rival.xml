@@ -11,33 +11,219 @@
         android:orientation="vertical"
         android:background="#ffffff"
         android:weightSum="10"
-        tools:context=".ui.roomone.RoomoneFragment">
+        tools:context=".ui.rival.RivalFragment">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/bg_decuong"
+            android:layout_height="160dp"
             android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
             android:paddingLeft="30dp"
+            android:paddingTop="10dp"
             android:paddingRight="30dp">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Chọn người để thi đấu"
-                android:textColor="#3498db"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="#dc6456"
+                        android:src="@drawable/avatar_tom" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Rolling In The Deep"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Lớp 1B"
+                    android:textColor="#2196F3"
+                    android:textSize="14sp" />
+
+
+                <!--<ImageView
+                android:id="@+id/ivThum"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/tvTitleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Các số từ 1 ,2, 3,4 5, 6,7 7, 8"
+                android:textColor="#30336b"
                 android:textSize="16sp" />
+            />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
 
 
-        </RelativeLayout>
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25" >
 
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".30"
+                            android:text="150"
+                            android:textSize="26sp"
+                            android:fontFamily="@font/montserrat_light"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".70"
+                            android:text="Điểm"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_light"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".30"
+                            android:text="280"
+                            android:textSize="26sp"
+                            android:fontFamily="@font/montserrat_light"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".70"
+                            android:text="Trận"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_light"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".30"
+                            android:text="78"
+                            android:textSize="26sp"
+                            android:fontFamily="@font/montserrat_light"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".70"
+                            android:text="Xếp hạng"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_light"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <Button
+                            android:id="@+id/stateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/montserrat_light"
+                            android:text="Hủy"/>
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hủy thi đấu" />
+
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
 
 
         <LinearLayout
-            android:id="@+id/item_invite1"
+            android:id="@+id/cv_one"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -55,9 +241,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#dc6456"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_wb_auto_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -68,15 +255,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Rolling In The Deep"
+                    android:text="Tiếng Việt - Cánh diều"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -89,7 +274,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_nl_item"
+            android:id="@+id/cv_two"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -107,9 +292,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#47a8d3"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_library_books_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -120,15 +306,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Owen Harris"
+                    android:text="Tiếng Việt - Năng lực"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -142,7 +326,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_bd_item"
+            android:id="@+id/cv_three"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -160,9 +344,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#6877f4"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_menu_book_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -173,14 +358,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Heikkinen"
+                    android:text="Tiếng Việt - Bình đẳng"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -194,7 +378,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_ct_item"
+            android:id="@+id/cv_four"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -212,9 +396,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#f9ca24"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_map_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -225,14 +410,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="William Henry"
+                    android:text="Tiếng Việt - Chân trời"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -246,7 +430,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_kn_item"
+            android:id="@+id/cv_five"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -264,9 +448,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#eb4d4b"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_mail_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -277,14 +462,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Moran James"
+                    android:text="Tiếng Việt - Kết nối"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -297,7 +481,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_kn_item1"
+            android:id="@+id/cv_six"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -315,9 +499,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#6ab04c"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_local_pharmacy_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -328,14 +513,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="McCarthy Timothy J"
+                    android:text="Tiếng Việt - Kết nối"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -349,7 +533,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_kn_item2"
+            android:id="@+id/cv_seven"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -367,9 +551,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#22a6b3"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_local_cafe_24"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -380,15 +565,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Master. Gosta Leonard"
+                    android:text="Tiếng Việt - Kết nối"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -401,7 +584,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_kn_item3"
+            android:id="@+id/cv_eight"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -419,9 +602,10 @@
                 app:cardCornerRadius="40dp">
                 <ImageView
                     android:background="#ee5253"
-                    android:src="@drawable/avatar_tom"
+                    android:src="@drawable/ic_baseline_star"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:padding="18dp" />
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -432,14 +616,13 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Johnson, Oscar W"
+                    android:text="Tiếng Việt - Kết nối"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
-                    
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="right"
@@ -452,6 +635,6 @@
         </LinearLayout>
 
 
+
     </LinearLayout>
 </ScrollView>
-
