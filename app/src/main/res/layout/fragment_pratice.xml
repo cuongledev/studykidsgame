@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="false">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,31 +16,33 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/bg_decuong"
-        android:layout_marginBottom="20dp">
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_light"
             android:text="Luyện tập"
-            android:textSize="34sp"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp" />
 
         <TextView
             android:id="@+id/textViewDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:paddingBottom="10dp"
+            android:fontFamily="@font/montserrat_light"
             android:text="Học trực tuyến với các trò chơi, video bài giảng, câu hỏi trắc nghiệm, và các bài tập thực hành"
-            android:textSize="14sp"
             android:textAlignment="center"
-            android:textColor="#34495e"/>
+            android:textColor="#34495e"
+            android:textSize="16sp" />
 
 
     </RelativeLayout>
@@ -79,10 +81,10 @@
 
             <TextView
                 android:layout_marginTop="8dp"
-                android:text="Tiếng Việt - Cánh diều"
-                android:textSize="16sp"
+                android:text="Toán học"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -131,9 +133,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Năng lực"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -183,9 +185,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Bình đẳng"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -235,9 +237,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Chân trời"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -287,9 +289,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Kết nối"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -338,9 +340,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Kết nối"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -390,9 +392,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Kết nối"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -441,9 +443,9 @@
             <TextView
                 android:layout_marginTop="8dp"
                 android:text="Tiếng Việt - Kết nối"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="#4a4a4a"
-                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView

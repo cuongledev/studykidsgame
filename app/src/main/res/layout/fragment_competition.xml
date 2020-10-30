@@ -10,41 +10,43 @@
 
     <LinearLayout
         android:id="@+id/one_item"
-        android:layout_marginBottom="24dp"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:background="@drawable/bg_item_selected_1"
-        android:layout_marginRight="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
-        android:layout_height="80dp"
-        android:padding="12dp"
-        >
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_item_selected_1"
+        android:orientation="horizontal"
+        android:padding="12dp">
 
         <ImageView
-            android:src="@drawable/ic_baseline_apart"
             android:layout_width="60dp"
-            android:layout_height="60dp" />
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_apart" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_marginLeft="12dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_light"
                 android:text="Đối kháng"
-                android:textSize="18sp"
-                android:textColor="#E91E63"
                 android:textAllCaps="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#E91E63"
+                android:textSize="26sp" />
+
             <TextView
-                android:text="Cùng nhau thi đấu"
-                android:textSize="14sp"
-                android:textColor="#bebebe"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Cùng nhau thi đấu"
+                android:textColor="#bebebe"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -59,7 +61,7 @@
         android:background="@drawable/bg_item_selected_6"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:padding="12dp"
         >
 
@@ -78,13 +80,15 @@
                 android:layout_marginTop="8dp"
                 android:text="Tạo phòng đấu"
                 android:textAllCaps="true"
-                android:textSize="18sp"
+                android:textSize="26sp"
                 android:textColor="#4CAF50"
+                android:fontFamily="@font/montserrat_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
                 android:text="Tạo phòng đấu chuyên nghiệp"
                 android:textSize="14sp"
+                android:fontFamily="@font/montserrat_light"
                 android:textColor="#bebebe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

@@ -26,10 +26,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/montserrat_light"
                 android:text="Chọn phòng để thi đấu"
-                android:textColor="#3498db"
-                android:textSize="16sp" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
 
         </RelativeLayout>
@@ -37,7 +37,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_cd_item"
+            android:id="@+id/room_item1"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -68,10 +68,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Rolling In The Deep"
+                    android:text="Phòng Truyền Thống"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -88,7 +88,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_nl_item"
+            android:id="@+id/room_item2"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -119,10 +119,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Owen Harris"
+                    android:text="Phòng Sáng Tạo"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -141,7 +141,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_bd_item"
+            android:id="@+id/room_item3"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -172,10 +172,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Heikkinen"
+                    android:text="Phòng Dấn Thân"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -193,7 +193,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_ct_item"
+            android:id="@+id/room_item4"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -224,10 +224,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="William Henry"
+                    android:text="Phòng Trung Thực"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -245,7 +245,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_kn_item"
+            android:id="@+id/room_item5"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -276,10 +276,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Moran James"
+                    android:text="Phòng Năng Động"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -296,7 +296,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_kn_item1"
+            android:id="@+id/room_item6"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -327,10 +327,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="McCarthy Timothy J"
+                    android:text="Phòng Sơn Tinh"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -348,7 +348,7 @@
 
 
         <LinearLayout
-            android:id="@+id/tv_kn_item2"
+            android:id="@+id/room_item7"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -379,10 +379,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Master. Gosta Leonard"
+                    android:text="Phòng Thủy Tinh"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -400,7 +400,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tv_kn_item3"
+            android:id="@+id/room_item8"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -431,10 +431,10 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Johnson, Oscar W"
+                    android:text="Phòng Núi Tản"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView

@@ -22,10 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Toán"
+            android:text="Toán học"
             android:textColor="#30336b"
-            android:textSize="36sp"
-            android:textStyle="bold"
+            android:textSize="26sp"
+            android:fontFamily="@font/montserrat_light"
             android:gravity="center"
             />
         <TextView
@@ -34,6 +34,7 @@
             android:text="Lớp 1 - Chương trình mới"
             android:textColor="#30336b"
             android:textSize="16sp"
+            android:fontFamily="@font/montserrat_light"
             android:gravity="center"/>
 
     </LinearLayout>

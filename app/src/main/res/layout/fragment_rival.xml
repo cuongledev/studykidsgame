@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="20dp"
             android:orientation="horizontal"
             android:paddingLeft="30dp"
@@ -47,15 +47,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Rolling In The Deep"
+                    android:text="Christopher Nolan"
+                    android:fontFamily="@font/montserrat_light"
                     android:textColor="#4a4a4a"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_light"
                     android:text="Lớp 1B"
                     android:textColor="#2196F3"
                     android:textSize="14sp" />
@@ -104,7 +106,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".30"
                             android:text="150"
-                            android:textSize="26sp"
+                            android:textSize="24sp"
                             android:fontFamily="@font/montserrat_light"
                             android:layout_marginRight="10dp"
                             />
@@ -131,7 +133,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".30"
                             android:text="280"
-                            android:textSize="26sp"
+                            android:textSize="24sp"
                             android:fontFamily="@font/montserrat_light"
                             android:layout_marginRight="10dp"
                             />
@@ -157,7 +159,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".30"
                             android:text="78"
-                            android:textSize="26sp"
+                            android:textSize="24sp"
                             android:fontFamily="@font/montserrat_light"
                             android:layout_marginRight="10dp"
                             />
@@ -182,9 +184,10 @@
 
                         <Button
                             android:id="@+id/stateLabel"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/colorPrimary"
+                            android:layout_marginTop="10dp"
                             android:textColor="#ffffff"
                             android:textSize="16sp"
                             android:fontFamily="@font/montserrat_light"
@@ -255,10 +258,11 @@
 
                 <TextView
                     android:layout_marginTop="8dp"
-                    android:text="Tiếng Việt - Cánh diều"
+                    android:text="Toán học"
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -310,6 +314,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -362,6 +367,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -414,6 +420,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -466,6 +473,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -517,6 +525,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -569,6 +578,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView
@@ -620,6 +630,7 @@
                     android:textSize="16sp"
                     android:textColor="#4a4a4a"
                     android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <ImageView

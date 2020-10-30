@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="Bài 31"
         android:textColor="#F44336"
-        android:textStyle="bold" />
+        android:fontFamily="@font/montserrat_light" />
 
     <TextView
         android:layout_width="match_parent"
@@ -26,6 +26,7 @@
         android:gravity="center"
         android:text="Phép cộng, phép trừ trong phạm vi 5, Dấu \u003E,\u003C,\u003D"
         android:textColor="#30336B"
+        android:fontFamily="@font/montserrat_light"
         android:textAllCaps="true"/>
 
 
@@ -56,7 +57,7 @@
         android:gravity="center"
         android:text="Hướng dẫn"
         android:textColor="#F44336"
-        android:textStyle="bold" />
+        android:fontFamily="@font/montserrat_light" />
 
     <TextView
         android:layout_width="match_parent"
@@ -64,6 +65,7 @@
         android:layout_marginTop="20dp"
         android:textSize="14sp"
         android:gravity="center"
+        android:fontFamily="@font/montserrat_light"
         android:text="1. Xem từng phép tính, phép so sánh ở phần trên."
         android:textColor="#30336B"/>
     <TextView
@@ -74,6 +76,7 @@
         android:layout_marginTop="20dp"
         android:textSize="14sp"
         android:gravity="center"
+        android:fontFamily="@font/montserrat_light"
         android:text="2. Tìm ở hần dưới số hoặc dấu phù hợp để điền vào ô trống trong phép tính, phép so sánh đó.."
         android:textColor="#30336B"/>
 

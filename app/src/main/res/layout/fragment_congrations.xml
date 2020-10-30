@@ -23,7 +23,7 @@
         android:gravity="center"
         android:textSize="25sp"
         android:textColor="#eb4d4b"
-        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_light"
         android:text="Số câu đúng: 3"/>
     <TextView
         android:id="@+id/text_false"
@@ -32,7 +32,7 @@
         android:gravity="center"
         android:textSize="25sp"
         android:textColor="#eb4d4b"
-        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_light"
         android:text="Số câu sai: 3"/>
     <TextView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:gravity="center"
         android:textSize="25sp"
         android:textColor="#eb4d4b"
-        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_light"
         android:text="Thời gian: 3 giây"/>
 
     <LinearLayout

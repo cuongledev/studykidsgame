@@ -18,8 +18,8 @@
             android:layout_gravity="center_vertical"
             android:text="Title"
             android:textColor="#30336b"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_light" />
 
     </RelativeLayout>
 

@@ -29,7 +29,7 @@
             android:text="Tiếng việt"
             android:textColor="#30336b"
             android:textSize="36sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_light"
             android:gravity="center"
             />
         <TextView
@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="Tập đánh vần"
             android:textColor="#30336b"
+            android:fontFamily="@font/montserrat_light"
             android:textSize="16sp"
             android:gravity="center"/>
 
@@ -117,6 +118,7 @@
                 android:text="Giới thiệu bài học"
                 android:textAlignment="center"
                 android:textColor="#34495e"
+                android:fontFamily="@font/montserrat_light"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -137,6 +139,7 @@
                 android:text="Những từ ngữ xác định vị trí"
                 android:textAlignment="center"
                 android:textColor="#34495e"
+                android:fontFamily="@font/montserrat_light"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -158,6 +161,7 @@
                 android:text="Tác dụng của việc xác định vị trí"
                 android:textAlignment="center"
                 android:textColor="#34495e"
+                android:fontFamily="@font/montserrat_light"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -179,6 +183,7 @@
                 android:text="Tổng kết bài học"
                 android:textAlignment="center"
                 android:textColor="#34495e"
+                android:fontFamily="@font/montserrat_light"
                 android:textSize="14sp" />
 
         </LinearLayout>
